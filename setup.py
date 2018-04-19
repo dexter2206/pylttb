@@ -14,7 +14,7 @@ setup(
     platforms=["Linux", "Unix"],
     setup_requires=['setuptools_scm'],
     install_requires=['numpy'],
-    tests_require=['marshmallow', 'pyaml', 'ddt'],
+    tests_require=['numpy'],
     author='Konrad Jałowiecki <dexter2206@gmail.com>',
     author_email='dexter2206@gmail.com',
     packages=find_packages(),
