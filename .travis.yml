@@ -9,8 +9,7 @@ before_deploy:
   - "rm -R pylttb/__pycache__"
   - "rm -R dist/"
   - "rm -R pylttb.egg-info/"
-deploy:  
-  clean_up: true  
+deploy:
   provider: pypi
   username: dexter2206
   password:
