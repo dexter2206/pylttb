@@ -4,7 +4,12 @@ python:
 install:
 - pip install .
 script: python -m unittest discover
-deploy:
+before_deploy:
+  - "rm -R .eggs"
+  - "rm -R pylttb/__pycache__"
+  - "rm -R dist/"
+  - "rm -R pylttb.egg-info/"
+deploy:  
   clean_up: true  
   provider: pypi
   username: dexter2206
